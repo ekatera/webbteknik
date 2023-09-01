@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbteknik. Uppgift 1. </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>CSS</h1>
+    </header>
+    <nav>
+        <a href="index.html">
+            <div>Fråga 1</div>
+        </a>
+        <a href="page1.html">
+            <div>Fråga 2</div>
+        </a>
+        <a href="#">
+            <div id="current">Fråga 3</div>
+        </a>
+    </nav>
+    <main>
+        <h3>Vad är en regel i CSS och vad består den av?</h3>
+        <p><em>CSS regel</em> bestämmer elementets utseende på sidan. Regeln består av en <em>selektor</em>
+            och en eller flera <em>deklarationer</em>. <em>Selektorn</em> bestämmer elementet på vilket regeln ska
+            tillämpas,
+            medans <em>deklarationen</em> bestämmer elementets egenskaper.</p>
+        <div class="img"><img src="./img/selector_declaration.PNG" alt="selektor och deklaration"></div>
+        <h3>Vad är skillnaden mellan id och class? När bör man använda id respektive class?</h3>
+        <p>Om man vill adressera ett enda element i en CSS-regel, ska man använda sig av ett <em>id</em>.
+            Detta är ett globalt attribut som kan sättas för alla HTML-element.
+            Ett id ska vara unikt och får bara förekomma en enda gång i varje HTML-dokument.
+        </p>
+        <p>Exempel <em>#idnamn {
+            color: blue;
+            }</em>
+        </p>
+        <p>Till skillnad från <em>id</em> kan <em>klass</em> tillämpas på flera element.</p>
+        <p>Exempel <em>.klassnamn {
+            color: blue;
+            }</em></p>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

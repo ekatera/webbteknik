@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbteknik. Uppgift 1. </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Datakommunikation och webbadresser</h1>
+    </header>
+    <nav>
+        <a href="#">
+            <div id="current">Fråga 1</div>
+        </a>
+        <a href="page1.html">
+            <div>Fråga 2</div>
+        </a>
+        <a href="page2.html">
+            <div>Fråga 3</div>
+        </a>
+    </nav>
+    <main>
+        <h3>Vad avses med termerna klient och server?</h3>
+        <p><em>Server</em> är ett program som utför uppgifter på begäran av <em>klient</em>. <em>Klient</em> och
+            <em>server</em> brukar kommunicera via ett
+            tydligt gränsnitt.
+            Klient- och serverprogram kan ligga på olika datorer och kommunicera över datornätverk.</p>
+        <div class="img"><img src="./img/client_server.PNG" alt="klient-server"></div>
+        <h3>Beskriv vad var och en av protokollen TCP och IP gör på sändande och mottagande sida.</h3>
+        <p>På den <em>sändande sida</em> gör protokollet följande:</p>
+        <ul>
+            <li>Dela upp datat som ska skickas i mindre hanterbara bitar. De kallas för paket.</li>
+            <li>Lägga till adressinformation till paketen så att mottagaren förstår att den ska ta emot paketen.</li>
+            <li> Förbereda data för fysisk sändning till kabeln.</li>
+        </ul>
+        <p>På den <em>mottagande sidan</em> skall protokollet:</p>
+        <ul>
+            <li>Plocka upp inkommande paketen.</li>
+            <li>Transportera dem till datorn.</li>
+            <li>Förbereda innehållet för att presentera det till dator.</li>
+        </ul>
+
+        <h3>Beskriv de delar som följande url består av: 
+            <em>http://webbteknik.abc.se:8082/kurs1/uppg/u1.html#fragor</em>
+        </h3>
+        <p><em>http</em> - protokollen som används, http</p>
+        <p><em>webbteknik.abc.se:8082</em> - domän (omvandlas till dators ip adress) och port</p>
+        <p><em>kurs1, uppg</em> - mappen i filträdet på domändator</p>
+        <p><em>u1.html</em> - namnet på webb-sidan </p>
+        <p><em>#fragor</em> - intern länk på webb-sidan</p>
+    </main>
+
+
+    <footer>
+    </footer>
+</body>
+
+</html>
